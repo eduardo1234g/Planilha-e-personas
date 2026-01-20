@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeatTips</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!-- Logo à esquerda -->
+        <div class="logo">
+            <img src="/img/WhatsApp Image 2024-12-10 at 17.26.00.png" alt="Logo" class="logo-img">
+        </div>
+
+        <!-- Menu de navegação à direita -->
+        <nav>
+            <ul>
+                <li><a href="/planilha.html">Planilha</a></li>
+                <li><a href="/personas.html">Personas</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="carrossel-container">
+        <div class="carrossel-imagens">
+            <img src="/img/img/rock_capa.jpg" alt="Imagem 1" class="carrossel-imagem">
+            <img src="/img/img/Les-styles-de-jazz-expliques-simplement-pour-les-neophytes.jpg" alt="Imagem 2" class="carrossel-imagem">
+            <img src="/img/img/jovem-mulher-caucasiana-isolada-em-um-fundo-azul-ouvindo-musica_1368-379250.avif" alt="Imagem 3" class="carrossel-imagem">
+        </div>
+        <div class="carrossel-bolinhas">
+            <span class="bolinha" data-index="0"></span>
+            <span class="bolinha" data-index="1"></span>
+            <span class="bolinha" data-index="2"></span>
+        </div>
+    </div>
+
+    <section class="music-options">
+        <button onclick="displayGenre('rock')">Rock</button>
+        <button onclick="displayGenre('pop')">Pop</button>
+        <button onclick="displayGenre('jazz')">Jazz</button>
+        <button onclick="displayGenre('classical')">Classical</button>
+    </section>
+
+    <section class="music-cards" id="music-cards">
+
+    </section>
+    <footer>
+        <p>&copy; 2024 Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+<script src="script.js"></script>
+</html>

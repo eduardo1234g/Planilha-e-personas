@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planilha de Pessoas e seus Artistas e Músicas Favoritas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ff0000;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        table {
+            width: 80%;
+            margin-top: 30px;
+            border-collapse: collapse;
+            box-shadow: 0 0 10px rgb(255, 255, 255);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        th, td {
+            padding: 12px 20px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #70226a;
+            color: white;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #a096dd;
+        }
+        tr:nth-child(odd) {
+            background-color: #a096dd;
+        }
+        td {
+            color: #000000;
+        }
+        caption {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            text-align: center;
+        }
+        body{
+            background-color: rgb(29, 26, 27);
+        }
+        caption{
+            color:white;
+        }
+        .buttons {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            gap: 10px; /* Espaço entre os botões */
+        }
+        .buttons button {
+            padding: 10px 15px;
+            font-size: 14px;
+            cursor: pointer;
+            background-color: #dbff0dc0;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .buttons button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="buttons">
+        <button onclick="window.location.href='home.html'">Inicio</button>
+        <button onclick="window.location.href='personas.html'">Personas</button>
+    </div>
+    <div class="container">
+        <table>
+            <caption>Planilha de Pessoas, Artistas e Músicas Favoritas</caption>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Artista Favorito</th>
+                    <th>Música Favorita</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Exemplo de 5 pessoas. Para adicionar mais, basta seguir o mesmo padrão -->
+                <tr><td>Adriana Silva</td><td>Jorge & Mateus</td><td>Amo Noite e Dia</td></tr>
+            <tr><td>Bruno Oliveira</td><td>Chitãozinho & Xororó</td><td>Festa de Rodeio</td></tr>
+            <tr><td>Carlos Souza</td><td>Zezé Di Camargo & Luciano</td><td>É o Amor</td></tr>
+            <tr><td>Daniela Costa</td><td>Henrique & Juliano</td><td>Cuida Bem Dela</td></tr>
+            <tr><td>Eduardo Pereira</td><td>Luan Santana</td><td>Te Esperando</td></tr>
+            <tr><td>Fernanda Santos</td><td>Marília Mendonça</td><td>Infiel</td></tr>
+            <tr><td>Gustavo Ribeiro</td><td>Maiara & Maraisa</td><td>Medo Bobo</td></tr>
+            <tr><td>Helena Almeida</td><td>Leonardo</td><td>Pensando em Você</td></tr>
+            <tr><td>Igor Martins</td><td>Thaeme & Thiago</td><td>Ai Que Saudade de Ocê</td></tr>
+            <tr><td>Juliana Costa</td><td>Simone & Simaria</td><td>Duvido Você Não Beijar</td></tr>
+            <tr><td>Kleber Alves</td><td>Bruno & Marrone</td><td>Choram as Rosas</td></tr>
+            <tr><td>Larissa Ramos</td><td>Wesley Safadão</td><td>Meu Coração é Teu</td></tr>
+            <tr><td>Marcos Pereira</td><td>Jads & Jadson</td><td>Na Hora H</td></tr>
+            <tr><td>Natália Lima</td><td>Victor & Leo</td><td>Não Me Compares</td></tr>
+            <tr><td>Otávio Silva</td><td>Gusttavo Lima</td><td>Balada Boa</td></tr>
+            <tr><td>Patrícia Oliveira</td><td>Felipe Araújo</td><td>Atrasadinha</td></tr>
+            <tr><td>Ricardo Souza</td><td>Solange Almeida</td><td>Se Não Fosse Você</td></tr>
+            <tr><td>Sandra Marques</td><td>César Menotti & Fabiano</td><td>Leva Eu</td></tr>
+            <tr><td>Tiago Martins</td><td>Roberta Miranda</td><td>Na Hora H</td></tr>
+            <tr><td>Ursula Pereira</td><td>Sandy & Junior</td><td>Quando Você Passa</td></tr>
+            <tr><td>Vânia Costa</td><td>Hugo & Guilherme</td><td>Liberdade Provisória</td></tr>
+            <tr><td>Wagner Alves</td><td>Marcos & Belutti</td><td>Ameia</td></tr>
+            <tr><td>Ximena Costa</td><td>Léo Magalhães</td><td>Me Apaixonei</td></tr>
+            <tr><td>Yago Silva</td><td>Zezé Di Camargo & Luciano</td><td>Sonho de Amor</td></tr>
+            <tr><td>Zélia Duarte</td><td>Chitãozinho & Xororó</td><td>O Menino da Porteira</td></tr>
+            <tr><td>Aline Gomes</td><td>Jorge & Mateus</td><td>Eu Quero Só Você</td></tr>
+            <tr><td>Bruno Lima</td><td>Henrique & Juliano</td><td>Quem Ama Não Esquece</td></tr>
+            <tr><td>Carolina Araújo</td><td>Marília Mendonça</td><td>Eu Sei de Cor</td></tr>
+            <tr><td>Danilo Soares</td><td>Luan Santana</td><td>Te Esperando</td></tr>
+            <tr><td>Elaine Costa</td><td>Victor & Leo</td><td>Beijo Bom</td></tr>
+            <tr><td>Felipe Martins</td><td>Maiara & Maraisa</td><td>Medo Bobo</td></tr>
+            <tr><td>Gisele Santana</td><td>Simone & Simaria</td><td>Regime Fechado</td></tr>
+            <tr><td>Henrique Pereira</td><td>Jads & Jadson</td><td>Sonho de Amor</td></tr>
+            <tr><td>Igor Almeida</td><td>Zezé Di Camargo & Luciano</td><td>Eu Te Amo</td></tr>
+            <tr><td>Juliano Santos</td><td>Gusttavo Lima</td><td>Apelido Carinhoso</td></tr>
+            <tr><td>Karla Soares</td><td>César Menotti & Fabiano</td><td>Leva Eu</td></tr>
+            <tr><td>Lucas Costa</td><td>Bruno & Marrone</td><td>Choram as Rosas</td></tr>
+            <tr><td>Márcia Silva</td><td>Luan Santana</td><td>Te Esperando</td></tr>
+            <tr><td>Nathália Rocha</td><td>Felipe Araújo</td><td>Atrasadinha</td></tr>
+            <tr><td>Olga Pereira</td><td>Marcos & Belutti</td><td>Ameia</td></tr>
+            <tr><td>Paulo Lima</td><td>Henrique & Juliano</td><td>Cuida Bem Dela</td></tr>
+            <tr><td>Querubim Alves</td><td>Roberta Miranda</td><td>Na Hora H</td></tr>
+            <tr><td>Rafaela Costa</td><td>Sandy & Junior</td><td>Quando Você Passa</td></tr>
+            <tr><td>Samuel Souza</td><td>Maiara & Maraisa</td><td>Medo Bobo</td></tr>
+            <tr><td>Tatiane Ribeiro</td><td>Simone & Simaria</td><td>Duvido Você Não Beijar</td></tr>
+            <tr><td>Ulisses Santos</td><td>Léo Magalhães</td><td>Me Apaixonei</td></tr>
+            <tr><td>Vanessa Almeida</td><td>Jorge & Mateus</td><td>Amo Noite e Dia</td></tr>
+            <tr><td>Waldir Costa</td><td>Henrique & Juliano</td><td>Cuida Bem Dela</td></tr>
+            <tr><td>Xuxa Silva</td><td>Chitãozinho & Xororó</td><td>Festa de Rodeio</td></tr>
+            <tr><td>Yasmin Lima</td><td>Zezé Di Camargo & Luciano</td><td>É o Amor</td></tr>
+            <tr><td>Zoraide Almeida</td><td>Leonardo</td><td>Pensando em Você</td></tr>
+            <tr><td>Ana Beatriz</td><td>Roberta Miranda</td><td>Na Hora H</td></tr>
+            <tr><td>Bruna Costa</td><td>Simone & Simaria</td><td>Regime Fechado</td></tr>
+            <tr><td>Camila Pereira</td><td>Jads & Jadson</td><td>Na Hora H</td></tr>
+            <tr><td>Danilo Costa</td><td>Luan Santana</td><td>Te Esperando</td></tr>
+            <tr><td>Erika Lima</td><td>Felipe Araújo</td><td>Atrasadinha</td></tr>
+            <tr><td>Fernanda Oliveira</td><td>Maiara & Maraisa</td><td>Medo Bobo</td></tr>
+            <tr><td>Gustavo Silva</td><td>César Menotti & Fabiano</td><td>Leva Eu</td></tr>
+            <tr><td>Helena Ramos</td><td>Jorge & Mateus</td><td>Amo Noite e Dia</td></tr>
+            <tr><td>Igor Almeida</td><td>Marília Mendonça</td><td>Infiel</td></tr>
+            <tr><td>João Paulo</td><td>Zezé Di Camargo & Luciano</td><td>Sonho de Amor</td></tr>
+            <tr><td>Karine Costa</td><td>Bruno & Marrone</td><td>Choram as Rosas</td></tr>
+            <tr><td>Luciana Silva</td><td>Luan Santana</td><td>Te Esperando</td></tr>
+            <tr><td>Marcos Costa</td><td>Henrique & Juliano</td><td>Cuida Bem Dela</td></tr>
+            <tr><td>Natália Oliveira</td><td>Gusttavo Lima</td><td>Balada Boa</td></tr>
+            <tr><td>Otávio Almeida</td><td>Maiara & Maraisa</td><td>Medo Bobo</td></tr>
+            <tr><td>Patrícia Lima</td><td>Wesley Safadão</td><td>Meu Coração é Teu</td></tr>
+            <tr><td>Rafael Costa</td><td>César Menotti & Fabiano</td><td>Leva Eu</td></tr>
+            <tr><td>Silvana Pereira</td><td>Léo Magalhães</td><td>Me Apaixonei</td></tr>
+            <tr><td>Tiago Lima</td><td>Zezé Di Camargo & Luciano</td><td>Eu Te Amo</td></tr>
+            <tr><td>Ursula Costa</td><td>Marcos & Belutti</td><td>Ameia</td></tr>
+            <tr><td>Vera Souza</td><td>Simone & Simaria</td><td>Duvido Você Não Beijar</td></tr>
+            <tr><td>Wagner Costa</td><td>Henrique & Juliano</td><td>Cuida Bem Dela</td></tr>
+            <tr><td>Xuxa Oliveira</td><td>Chitãozinho & Xororó</td><td>Festa de Rodeio</td></tr>
+            <tr><td>Yasmin Costa</td><td>Luan Santana</td><td>Te Esperando</td></tr>
+            <tr><td>Zilda Pereira</td><td>Maiara & Maraisa</td><td>Medo Bobo</td></tr>
+            <tr><td>Adriana Silva</td><td>Legião Urbana</td><td>Tempo Perdido</td></tr>
+            <tr><td>Bruno Oliveira</td><td>Oasis</td><td>Wonderwall</td></tr>
+            <tr><td>Carlos Souza</td><td>Queen</td><td>Bohemian Rhapsody</td></tr>
+            <tr><td>Daniela Costa</td><td>Foo Fighters</td><td>The Pretender</td></tr>
+            <tr><td>Eduardo Pereira</td><td>The Beatles</td><td>Hey Jude</td></tr>
+            <tr><td>Fernanda Santos</td><td>AC/DC</td><td>Back In Black</td></tr>
+            <tr><td>Gustavo Ribeiro</td><td>Red Hot Chili Peppers</td><td>Under the Bridge</td></tr>
+            <tr><td>Helena Almeida</td><td>Arctic Monkeys</td><td>Do I Wanna Know?</td></tr>
+            <tr><td>Igor Martins</td><td>U2</td><td>With or Without You</td></tr>
+            <tr><td>Juliana Costa</td><td>The Rolling Stones</td><td>Paint It, Black</td></tr>
+            <tr><td>Kleber Alves</td><td>Metallica</td><td>Enter Sandman</td></tr>
+            <tr><td>Larissa Ramos</td><td>Pink Floyd</td><td>Comfortably Numb</td></tr>
+            <tr><td>Marcos Pereira</td><td>Raimundos</td><td>Mulher de Fases</td></tr>
+            <tr><td>Natália Lima</td><td>The Who</td><td>Baba O'Riley</td></tr>
+            <tr><td>Otávio Silva</td><td>Linkin Park</td><td>In the End</td></tr>
+            <tr><td>Patrícia Oliveira</td><td>Paramore</td><td>Misery Business</td></tr>
+            <tr><td>Ricardo Souza</td><td>Green Day</td><td>American Idiot</td></tr>
+            <tr><td>Sandra Marques</td><td>Imagine Dragons</td><td>Radioactive</td></tr>
+            <tr><td>Tiago Martins</td><td>Nirvana</td><td>Smells Like Teen Spirit</td></tr>
+            <tr><td>Ursula Pereira</td><td>Coldplay</td><td>Fix You</td></tr>
+            <tr><td>Vânia Costa</td><td>The Cure</td><td>Just Like Heaven</td></tr>
+            <tr><td>Wagner Alves</td><td>AC/DC</td><td>Highway to Hell</td></tr>
+            <tr><td>Ximena Costa</td><td>Guns N' Roses</td><td>Sweet Child O' Mine</td></tr>
+            <tr><td>Yago Silva</td><td>Foo Fighters</td><td>Everlong</td></tr>
+            <tr><td>Zélia Duarte</td><td>Led Zeppelin</td><td>Stairway to Heaven</td></tr>
+            <tr><td>Aline Gomes</td><td>Red Hot Chili Peppers</td><td>Give It Away</td></tr>
+            <tr><td>Bruno Lima</td><td>Linkin Park</td><td>Crawling</td></tr>
+            <tr><td>Carolina Araújo</td><td>Metallica</td><td>Nothing Else Matters</td></tr>
+            <tr><td>Danilo Soares</td><td>The Rolling Stones</td><td>Angie</td></tr>
+            <tr><td>Elaine Costa</td><td>Oasis</td><td>Don't Look Back In Anger</td></tr>
+            <tr><td>Felipe Martins</td><td>Imagine Dragons</td><td>Believer</td></tr>
+            <tr><td>Gisele Santana</td><td>Queen</td><td>We Will Rock You</td></tr>
+            <tr><td>Henrique Pereira</td><td>Paramore</td><td>Still Into You</td></tr>
+            <tr><td>Igor Almeida</td><td>Green Day</td><td>Basket Case</td></tr>
+            <tr><td>Juliano Santos</td><td>Arctic Monkeys</td><td>R U Mine?</td></tr>
+            <tr><td>Karla Soares</td><td>U2</td><td>One</td></tr>
+            <tr><td>Lucas Costa</td><td>Coldplay</td><td>Viva La Vida</td></tr>
+            <tr><td>Márcia Silva</td><td>Pink Floyd</td><td>Wish You Were Here</td></tr>
+            <tr><td>Nathália Rocha</td><td>Red Hot Chili Peppers</td><td>Scar Tissue</td></tr>
+            <tr><td>Olga Pereira</td><td>The Who</td><td>My Generation</td></tr>
+            <tr><td>Paulo Lima</td><td>Guns N' Roses</td><td>November Rain</td></tr>
+            <tr><td>Querubim Alves</td><td>Led Zeppelin</td><td>Whole Lotta Love</td></tr>
+            <tr><td>Rafaela Costa</td><td>Metallica</td><td>Master of Puppets</td></tr>
+            <tr><td>Silvana Pereira</td><td>Guns N' Roses</td><td>Knockin' on Heaven's Door</td></tr>
+            <tr><td>Tiago Lima</td><td>Foo Fighters</td><td>Best of You</td></tr>
+            <tr><td>Ursula Costa</td><td>Imagine Dragons</td><td>Demons</td></tr>
+            <tr><td>Vera Souza</td><td>Coldplay</td><td>Yellow</td></tr>
+            <tr><td>Wagner Costa</td><td>The Beatles</td><td>Come Together</td></tr>
+            <tr><td>Xuxa Oliveira</td><td>Queen</td><td>Don't Stop Me Now</td></tr>
+            <tr><td>Yasmin Costa</td><td>Linkin Park</td><td>One Step Closer</td></tr>
+            <tr><td>Zilda Pereira</td><td>Pink Floyd</td><td>Another Brick in the Wall</td></tr>
+            <tr><td>Ana Beatriz</td><td>The Rolling Stones</td><td>Start Me Up</td></tr>
+            <tr><td>Bruna Costa</td><td>Green Day</td><td>Holiday</td></tr>
+            <tr><td>Camila Pereira</td><td>U2</td><td>Sunday Bloody Sunday</td></tr>
+            <tr><td>Danilo Costa</td><td>AC/DC</td><td>Thunderstruck</td></tr>
+            <tr><td>Erika Lima</td><td>Oasis</td><td>Live Forever</td></tr>
+            <tr><td>Fernanda Oliveira</td><td>Red Hot Chili Peppers</td><td>Californication</td></tr>
+            <tr><td>Gustavo Silva</td><td>Linkin Park</td><td>Numb</td></tr>
+            <tr><td>Helena Ramos</td><td>Foo Fighters</td><td>Learn to Fly</td></tr>
+            <tr><td>Igor Almeida</td><td>Arctic Monkeys</td><td>Why'd You Only Call Me When You're High?</td></tr>
+            <tr><td>João Paulo</td><td>The Cure</td><td>Lovesong</td></tr>
+            <tr><td>Karine Costa</td><td>Coldplay</td><td>The Scientist</td></tr>
+            <tr><td>Luciana Silva</td><td>Metallica</td><td>Fade to Black</td></tr>
+            <tr><td>Marcos Costa</td><td>Imagine Dragons</td><td>Thunder</td></tr>
+            <tr><td>Natália Oliveira</td><td>Queen</td><td>Somebody to Love</td></tr>
+            <tr><td>Otávio Almeida</td><td>Pink Floyd</td><td>Time</td></tr>
+            <tr><td>Patrícia Lima</td><td>Red Hot Chili Peppers</td><td>By the Way</td></tr>
+            <tr><td>Rafael Costa</td><td>Linkin Park</td><td>Crawling</td></tr>
+            <tr><td>Silvana Costa</td><td>Foo Fighters</td><td>All My Life</td></tr>
+            <tr><td>Tiago Ribeiro</td><td>Green Day</td><td>When I Come Around</td></tr>
+            <tr><td>Ursula Soares</td><td>Arctic Monkeys</td><td>505</td></tr>
+            <tr><td>Vera Costa</td><td>Metallica</td><td>Seek & Destroy</td></tr>
+            <tr><td>Wagner Pereira</td><td>The Who</td><td>Pinball Wizard</td></tr>
+            <tr><td>Xuxa Costa</td><td>Led Zeppelin</td><td>Kashmir</td></tr>
+            <tr><td>Yasmin Almeida</td><td>Guns N' Roses</td><td>Welcome to the Jungle</td></tr>
+            <tr><td>Zélia Costa</td><td>AC/DC</td><td>You Shook Me All Night Long</td></tr>
+            <tr><td>Adriana Santos</td><td>John Coltrane</td><td>Giant Steps</td></tr>
+            <tr><td>Bruno Silva</td><td>Miles Davis</td><td>So What</td></tr>
+            <tr><td>Carla Lima</td><td>Louis Armstrong</td><td>What a Wonderful World</td></tr>
+            <tr><td>Daniel Oliveira</td><td>Bill Evans</td><td>Waltz for Debby</td></tr>
+            <tr><td>Eduardo Pereira</td><td>Chet Baker</td><td>My Funny Valentine</td></tr>
+            <tr><td>Fernanda Costa</td><td>Dizzy Gillespie</td><td>Salt Peanuts</td></tr>
+            <tr><td>Gustavo Almeida</td><td>Ella Fitzgerald</td><td>Summertime</td></tr>
+            <tr><td>Helena Ramos</td><td>Charles Mingus</td><td>Goodbye Pork Pie Hat</td></tr>
+            <tr><td>Igor Martins</td><td>Herbie Hancock</td><td>Cantaloupe Island</td></tr>
+            <tr><td>Juliana Pereira</td><td>Oscar Peterson</td><td>Hymn to Freedom</td></tr>
+            <tr><td>Karine Alves</td><td>Thelonious Monk</td><td>Round Midnight</td></tr>
+            <tr><td>Lucas Oliveira</td><td>Stan Getz</td><td>The Girl from Ipanema</td></tr>
+            <tr><td>Márcia Costa</td><td>Wayne Shorter</td><td>Footprints</td></tr>
+            <tr><td>Natália Santos</td><td>Sarah Vaughan</td><td>Broken Hearted Melody</td></tr>
+            <tr><td>Otávio Silva</td><td>Keith Jarrett</td><td>The Köln Concert</td></tr>
+            <tr><td>Patrícia Lima</td><td>Art Blakey</td><td>Moanin'</td></tr>
+            <tr><td>Ricardo Souza</td><td>Wynton Marsalis</td><td>Black Codes</td></tr>
+            <tr><td>Silvana Rocha</td><td>Dexter Gordon</td><td>Cheese Cake</td></tr>
+            <tr><td>Thiago Almeida</td><td>Mary Lou Williams</td><td>In the Land of Oo-Bla-Dee</td></tr>
+            <tr><td>Ursula Pereira</td><td>Sonny Rollins</td><td>St. Thomas</td></tr>
+            <tr><td>Vera Santos</td><td>McCoy Tyner</td><td>Passion Dance</td></tr>
+            <tr><td>Wagner Silva</td><td>John Scofield</td><td>A Go Go</td></tr>
+            <tr><td>Xuxa Almeida</td><td>Dave Brubeck</td><td>Take Five</td></tr>
+            <tr><td>Yasmin Pereira</td><td>Pharoah Sanders</td><td>The Creator Has a Master Plan</td></tr>
+            <tr><td>Zélia Costa</td><td>Clifford Brown</td><td>Joy Spring</td></tr>
+            <tr><td>André Souza</td><td>Bud Powell</td><td>Tempus Fugit</td></tr>
+            <tr><td>Bruna Lima</td><td>Ben Webster</td><td>In a Sentimental Mood</td></tr>
+            <tr><td>Carolina Alves</td><td>Billie Holiday</td><td>Strange Fruit</td></tr>
+            <tr><td>Danilo Costa</td><td>Pat Metheny</td><td>Bright Size Life</td></tr>
+            <tr><td>Elaine Costa</td><td>Stan Kenton</td><td>Artistry in Rhythm</td></tr>
+            <tr><td>Felipe Ribeiro</td><td>Johnny Coles</td><td>Little Johnny C</td></tr>
+            <tr><td>Gabriela Pereira</td><td>Lou Donaldson</td><td>Alligator Bogaloo</td></tr>
+            <tr><td>Igor Santos</td><td>Hank Mobley</td><td>So What</td></tr>
+            <tr><td>Joana Alves</td><td>Antonio Carlos Jobim</td><td>Águas de Março</td></tr>
+            <tr><td>Karina Lima</td><td>Horace Silver</td><td>Song for My Father</td></tr>
+            <tr><td>Luciana Souza</td><td>Keith Jarrett</td><td>My Song</td></tr>
+            <tr><td>Márcio Costa</td><td>Chuck Mangione</td><td>Feels So Good</td></tr>
+            <tr><td>Natália Pereira</td><td>Joe Henderson</td><td>Recorda-Me</td></tr>
+            <tr><td>Otávio Costa</td><td>Lee Morgan</td><td>The Sidewinder</td></tr>
+            <tr><td>Patrícia Costa</td><td>Tommy Flanagan</td><td>Jazz Poet</td></tr>
+            <tr><td>Rafael Souza</td><td>John Zorn</td><td>Masada</td></tr>
+            <tr><td>Silvia Pereira</td><td>Horace Parlan</td><td>Phineas’ Disco</td></tr>
+            <tr><td>Thiago Lima</td><td>Wes Montgomery</td><td>Road Song</td></tr>
+            <tr><td>André Silva</td><td>Travis Scott</td><td>SICKO MODE</td></tr>
+            <tr><td>Beatriz Santos</td><td>Future</td><td>Mask Off</td></tr>
+            <tr><td>Carla Lima</td><td>Drake</td><td>God's Plan</td></tr>
+            <tr><td>Daniel Oliveira</td><td>Post Malone</td><td>Rockstar</td></tr>
+            <tr><td>Eduardo Pereira</td><td>Lil Uzi Vert</td><td>XO TOUR Llif3</td></tr>
+            <tr><td>Fernanda Costa</td><td>Juice WRLD</td><td>Lucid Dreams</td></tr>
+            <tr><td>Gustavo Almeida</td><td>Kanye West</td><td>Heartless</td></tr>
+            <tr><td>Helena Ramos</td><td>Young Thug</td><td>Hot</td></tr>
+            <tr><td>Igor Martins</td><td>21 Savage</td><td>A Lot</td></tr>
+            <tr><td>Juliana Pereira</td><td>Lil Baby</td><td>Drip Too Hard</td></tr>
+            <tr><td>Karine Alves</td><td>Migos</td><td>Bad and Boujee</td></tr>
+            <tr><td>Lucas Oliveira</td><td>Rich The Kid</td><td>New Freezer</td></tr>
+            <tr><td>Márcia Costa</td><td>Lil Yachty</td><td>One Night</td></tr>
+            <tr><td>Natália Santos</td><td>Chief Keef</td><td>Love Sosa</td></tr>
+            <tr><td>Otávio Silva</td><td>Cardi B</td><td>Money</td></tr>
+            <tr><td>Patrícia Lima</td><td>Tyler, The Creator</td><td>Earfquake</td></tr>
+            <tr><td>Ricardo Souza</td><td>Lil Wayne</td><td>6 Foot 7 Foot</td></tr>
+            <tr><td>Silvana Rocha</td><td>Trippie Redd</td><td>Love Scars</td></tr>
+            <tr><td>Thiago Almeida</td><td>Wiz Khalifa</td><td>See You Again</td></tr>
+            <tr><td>Ursula Pereira</td><td>SmokePurpp</td><td>Audi</td></tr>
+            <tr><td>Vera Santos</td><td>Gucci Mane</td><td>Both</td></tr>
+            <tr><td>Wagner Silva</td><td>YG</td><td>My Ni**a</td></tr>
+            <tr><td>Xuxa Almeida</td><td>Gunna</td><td>Drip Too Hard</td></tr>
+            <tr><td>Yasmin Pereira</td><td>Playboi Carti</td><td>Magnolia</td></tr>
+            <tr><td>Zélia Costa</td><td>Famous Dex</td><td>Japan</td></tr>
+            <tr><td>André Souza</td><td>Ski Mask The Slump God</td><td>Catch Me Outside</td></tr>
+            <tr><td>Bruna Lima</td><td>Pop Smoke</td><td>Welcome to the Party</td></tr>
+            <tr><td>Carolina Alves</td><td>Young Dolph</td><td>Preach</td></tr>
+            <tr><td>Danilo Costa</td><td>Baby Keem</td><td>Family Ties</td></tr>
+            <tr><td>Elaine Costa</td><td>Lil Durk</td><td>Laugh Now Cry Later</td></tr>
+            <tr><td>Felipe Ribeiro</td><td>Pusha T</td><td>If You Know You Know</td></tr>
+            <tr><td>Gabriela Pereira</td><td>Future</td><td>Jumpman</td></tr>
+            <tr><td>Igor Santos</td><td>Drake</td><td>Nonstop</td></tr>
+            <tr><td>Joana Alves</td><td>Juice WRLD</td><td>All Girls Are the Same</td></tr>
+            <tr><td>Karina Lima</td><td>Kodak Black</td><td>No Flockin</td></tr>
+            <tr><td>Luciana Souza</td><td>Travis Scott</td><td>Goosebumps</td></tr>
+            <tr><td>Márcio Costa</td><td>Lil Uzi Vert</td><td>Money Longer</td></tr>
+            <tr><td>Natália Pereira</td><td>Migos</td><td>T-Shirt</td></tr>
+            <tr><td>Otávio Costa</td><td>21 Savage</td><td>Bank Account</td></tr>
+            <tr><td>Patrícia Costa</td><td>Young Thug</td><td>For Ya'll</td></tr>
+            <tr><td>Rafael Souza</td><td>Rich The Kid</td><td>Plug Walk</td></tr>
+            <tr><td>Silvia Pereira</td><td>Tyler, The Creator</td><td>See You Again</td></tr>
+            <tr><td>Thiago Lima</td><td>Wiz Khalifa</td><td>We Dem Boyz</td></tr>
+            <tr><td>Thiago Pereira</td><td>Exaltasamba</td><td>Tá Vendo Aquela Lua</td></tr>
+        <tr><td>Juliana Almeida</td><td>Sorriso Maroto</td><td>Deixa Eu Te Amar</td></tr>
+        <tr><td>Ricardo Silva</td><td>Raça Negra</td><td>Cheia de Manias</td></tr>
+        <tr><td>Ana Costa</td><td>Pagode 90</td><td>Brilho de Cristal</td></tr>
+        <tr><td>Lucas Rocha</td><td>Zeca Pagodinho</td><td>Deixa a Vida Me Levar</td></tr>
+        <tr><td>Fernanda Lima</td><td>Cartão de Crédito</td><td>Meu Lugar</td></tr>
+        <tr><td>Eduardo Souza</td><td>Thiaguinho</td><td>Ousadia & Alegria</td></tr>
+        <tr><td>Patrícia Santos</td><td>Grupo Revelação</td><td>Vou Festejar</td></tr>
+        <tr><td>Marcelo Alves</td><td>Fundo de Quintal</td><td>Avohai</td></tr>
+        <tr><td>Carla Oliveira</td><td>Beth Carvalho</td><td>Coisinha do Pai</td></tr>
+        <tr><td>José Pereira</td><td>São Clemente</td><td>Meus Segredos</td></tr>
+        <tr><td>Vanessa Rocha</td><td>Os Travessos</td><td>Fui Fiel</td></tr>
+        <tr><td>Rafael Santos</td><td>Grupo Nosso Sentimento</td><td>Me Apaixonei Pela Pessoa Errada</td></tr>
+        <tr><td>Gabriel Martins</td><td>Jorge & Mateus</td><td>Pode Chorar</td></tr>
+        <tr><td>Bruna Costa</td><td>Henrique & Juliano</td><td>Cuida Bem Dela</td></tr>
+        <tr><td>Luana Rocha</td><td>Zeze Di Camargo & Luciano</td><td>É O Amor</td></tr>
+        <tr><td>Paulo Silva</td><td>Chitãozinho & Xororó</td><td>Fio de Cabelo</td></tr>
+        <tr><td>Renata Almeida</td><td>Victor & Leo</td><td>Boa Sorte Pra Você</td></tr>
+        <tr><td>Simone Martins</td><td>Maiara & Maraisa</td><td>10%</td></tr>
+        <tr><td>Daniela Costa</td><td>Fernando & Sorocaba</td><td>Madri</td></tr>
+        <tr><td>Vinícius Oliveira</td><td>Jads & Jadson</td><td>Seguindo No Choro</td></tr>
+        <tr><td>Carla Souza</td><td>Jorge & Mateus</td><td>Eu Te Esperando</td></tr>
+        <tr><td>Giovana Rocha</td><td>Henrique & Juliano</td><td>Saudade Sua</td></tr>
+        <tr><td>Roberta Silva</td><td>Chitãozinho & Xororó</td><td>Indiferença</td></tr>
+        <tr><td>Cláudia Martins</td><td>Jads & Jadson</td><td>Me Apaixonei</td></tr>
+        <tr><td>Felipe Costa</td><td>Zeca Pagodinho</td><td>Você me Vira a Cabeça</td></tr>
+        <tr><td>Eduarda Rocha</td><td>Thiaguinho</td><td>Desencana</td></tr>
+        <tr><td>Juliano Almeida</td><td>Exaltasamba</td><td>Clima de Rodeio</td></tr>
+        <tr><td>André Souza</td><td>Raça Negra</td><td>É Tenso</td></tr>
+        <tr><td>Isabela Pereira</td><td>Fundo de Quintal</td><td>A Dama e o Vagabundo</td></tr>
+        <tr><td>Gabriela Lima</td><td>Os Travessos</td><td>Vou Te Amar</td></tr>
+        <tr><td>Thiago Costa</td><td>Cartão de Crédito</td><td>Na Ponta da Língua</td></tr>
+        <tr><td>Ricardo Almeida</td><td>Grupo Revelação</td><td>Deixa Acontecer</td></tr>
+        <tr><td>Mariana Rocha</td><td>São Clemente</td><td>Solitário</td></tr>
+        <tr><td>Renato Pereira</td><td>Beth Carvalho</td><td>Beija-Flor</td></tr>
+        <tr><td>Robson Oliveira</td><td>Pagode 90</td><td>Coração Radiante</td></tr>
+        <tr><td>Isadora Silva</td><td>Zeca Pagodinho</td><td>Quem Me Dera</td></tr>
+        <tr><td>Ricardo Costa</td><td>Raça Negra</td><td>Amiga</td></tr>
+        <tr><td>Patrícia Lima</td><td>Exaltasamba</td><td>É Tarde Demais</td></tr>
+        <tr><td>Vânia Pereira</td><td>Sorriso Maroto</td><td>Quando a Gente Ama</td></tr>
+        <tr><td>Marco Souza</td><td>Os Travessos</td><td>Vem Pra Mim</td></tr>
+        <tr><td>Leandro Lima</td><td>Fundo de Quintal</td><td>Quem Não Quer Sou Eu</td></tr>
+        <tr><td>Aline Oliveira</td><td>Jorge & Mateus</td><td>Querendo Te Amar</td></tr>
+        <tr><td>Gabriela Almeida</td><td>Henrique & Juliano</td><td>Na Hora da Raiva</td></tr>
+        <tr><td>Júlio Costa</td><td>Victor & Leo</td><td>Eu Quero Só Você</td></tr>
+        <tr><td>Felipe Oliveira</td><td>Chitãozinho & Xororó</td><td>Alô</td></tr>
+        <tr><td>Giovanna Lima</td><td>Maiara & Maraisa</td><td>Agora É Minha Vez</td></tr>
+        <tr><td>Thiago Rocha</td><td>Fernando & Sorocaba</td><td>Recaídas</td></tr>
+        <tr><td>Bruna Almeida</td><td>Jads & Jadson</td><td>Me Beija</td></tr>
+        <tr><td>Marcelo Pereira</td><td>Raça Negra</td><td>Você Vai Ver</td></tr>
+        <tr><td>Leonardo Costa</td><td>Exaltasamba</td><td>Desculpa</td></tr>
+        <tr><td>Amanda Rocha</td><td>Thiaguinho</td><td>Quando a Gente Ama</td></tr>
+        <tr><td>Patrícia Oliveira</td><td>Cartão de Crédito</td><td>Meus Sentimentos</td></tr>
+        <tr><td>José Lima</td><td>Sorriso Maroto</td><td>Deixa Eu Te Amar</td></tr>
+        <tr><td>Renato Costa</td><td>Pagode 90</td><td>Por Você</td></tr>
+        <tr><td>Aline Pereira</td><td>Fundo de Quintal</td><td>Coração</td></tr>
+        <tr><td>Marcela Rocha</td><td>Zeca Pagodinho</td><td>Perdão</td></tr>
+        <tr><td>Tiago Souza</td><td>Raça Negra</td><td>Me Faz Felicidade</td></tr>
+        <tr><td>Vitor Almeida</td><td>Os Travessos</td><td>É Tarde Demais</td></tr>
+        <tr><td>Mariana Lima</td><td>Jorge & Mateus</td><td>Chorar de Saudade</td></tr>
+        <tr><td>Vinícius Costa</td><td>Henrique & Juliano</td><td>Eu Já Fui</td></tr>
+        <tr><td>Fernanda Souza</td><td>Victor & Leo</td><td>Coração de Aço</td></tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
